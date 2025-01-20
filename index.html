@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./img/gus-anim.gif" as="image" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Gus</title>
+  </head>
+  <body>
+    <section class="main-page">
+      <img class="logo" src="./img/logo black.svg" alt="logo" />
+      <div class="wrraper">
+        <div class="main-page-txt-con">
+          <p class="subtitle">Доброго вечора, ми з України</p>
+
+          <h1 class="title">Бандерогусь</h1>
+
+          <p class="text">
+            Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми
+            подвигами, бороню Батьківщину та підтримую позитивний дух народу.
+            Слава Україні!
+          </p>
+
+          <button class="send-btn" id="go-to-form-btn">Запустити гуся</button>
+        </div>
+        <img src="./img/gus.svg" alt="gus" />
+      </div>
+    </section>
+
+    <section class="facts">
+      <img class="facts-trezub" src="./img/trezub.svg" alt="trezub" />
+      <h2 class="facts-title">Цікаві факти про бандерогусей</h2>
+      <p class="facts-descr">
+        Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть
+        атакувати<br />
+        ворога системою надпотужного озброєння. Також нищать психологічно,
+        активуючи<br />
+        високочастотне шипіння та розмахування крилами
+      </p>
+
+      <ul class="facts-list">
+        <li>
+          <img class="facts-list-img" src="./img/gus1.svg" alt="gus" />
+          <h3 class="facts-list-title">Система навігації</h3>
+          <p class="facts-list-text">
+            Супутниковий GPS та ехолокатори<br />
+            розпізнають ворожу техніку навіть на етапі<br />
+            збірки
+          </p>
+        </li>
+
+        <li>
+          <img class="facts-list-img" src="./img/gus2.svg" alt="gus" />
+          <h3 class="facts-list-title">Очі-тепловізори</h3>
+          <p class="facts-list-text">
+            Допомагають виявити характер сигнатури<br />
+            об’єктів та значно підвищують точність<br />
+            удару
+          </p>
+        </li>
+
+        <li>
+          <img class="facts-list-img" src="./img/gus3.svg" alt="gus" />
+          <h3 class="facts-list-title">Байракрила</h3>
+          <p class="facts-list-text">
+            Можуть нести 2-4 керовані ракети, що<br />
+            вражають ціль на відстані «ніхріна собі»<br />
+            кілометрів
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-con">
+      <form action="#" id="form" class="form">
+        <img class="form-trezub" src="./img/trezub.svg" alt="trezub" />
+        <h2 class="form-title">Поділися, будь ласка, поштою</h2>
+        <p class="form-text">та запиши гуся до бандерозагону</p>
+
+        <div class="form-field">
+          <label for="user-name" class="form-field-label">Ім'я</label>
+          <input type="text" id="user-name" class="form-input" />
+        </div>
+
+        <div class="form-field">
+          <label for="user-email" class="form-field-label">Email</label>
+          <input type="email" id="user-email" class="form-input" />
+        </div>
+
+        <button class="send-btn" type="submit" id="launch-btn">
+          Запустити гуся
+        </button>
+      </form>
+    </section>
+
+    <script src="./js/form.js"></script>
+  </body>
+</html>

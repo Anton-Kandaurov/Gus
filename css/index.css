@@ -1,0 +1,272 @@
+.montserrat-uniquifier {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root {
+    --accent-color: #C3B900;
+    --text-color: #1B1D1F;
+    --fade-color:#005BBB;
+    --subaccent-color: #FF9D00;
+    --background-color: #FFFFFF;
+    --font-family: "Montserrat", sans-serif;
+    --transition-ms: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+}
+
+
+
+/* ---------------------------------------- */
+
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-page{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(270deg, #a5deff 0%, #fcfefe 100%);
+}
+
+.wrraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1360px;
+    margin: auto;
+}
+
+.main-page-txt-con{
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 60px;
+background-color: var(--background-color);
+border-radius: 40px;
+box-sizing: border-box;
+}
+
+.logo{
+    position: absolute;
+    top: 48px;
+    left: 95px;
+}
+
+.subtitle{
+    font: 600 16px / 150% var(--font-family);
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+
+.title{
+font: 600 64px / 112% var(--font-family);
+color: var(--text-color);
+margin-bottom: 24px;
+}
+
+.text{
+    font: 400 16px / 150% var(--font-family);
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+
+.send-btn{
+    font: 400 16px / 150% var(--font-family);
+    color: var(--background-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 8px;
+    width: 172px;
+    background-color: var(--accent-color);
+}
+
+.send-btn:hover{
+    background-color: var(--subaccent-color);
+}
+
+
+.facts{
+    width: 100%;
+    padding-bottom: 95px;
+    padding-top: 48px;
+    background-color: var(--background-color);
+}
+
+.facts-trezub{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.facts-title{
+    text-align: center;
+    font: 600 48px / 150% var(--font-family);
+    color: var(--black);
+    margin-bottom: 32px;
+}
+
+.facts-descr{
+    font: 400 16px / 150% var(--font-family);
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 32px;
+}
+
+.facts-list{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.facts-list-title{
+font: 600 24px / 100% var(--font-family);
+text-align: center;
+color: var(--black);
+margin-bottom: 24px;
+}
+
+.facts-list-text{
+    font: 400 16px / 150% var(--font-family);
+    text-align: center;
+    color: var(--black);
+}
+
+.facts-list-img{
+    margin-bottom: 8px;
+}
+
+.form-con{
+    width: 100%;
+    padding-top: 78px;
+    padding-bottom: 78px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(270deg, #a5deff 0%, #fcfefe 100%);
+}
+
+.form{
+    border-radius: 40px;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    width: 573px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.form-trezub{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+.form-title{
+    font: 600 24px / 100% var(--font-family);
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.form-text{
+    font: 400 16px / 150% var(--font-family);
+    color: var(--black);
+    margin-bottom: 24px;
+}
+
+.form-field-name{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 24px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 48px;
+}
+
+.form-field-label{
+    font: 400 16px / 150% var(--font-family);
+    color: var(--black);
+    margin-bottom: 6px;
+}
+
+.form-input{
+border: 1px solid var(--subaccent-color);
+border-radius: 8px;
+width: 100%;
+height: 60px;
+padding: 12px;
+box-sizing: border-box;
+
+
+}
+
+
+
+
+
+
+
+
